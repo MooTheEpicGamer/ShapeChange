@@ -115,7 +115,7 @@ struct DigitButton: View {
                     Text("0")
                         .foregroundColor(.white)
                         .font(.system(size: 30, weight: .semibold))
-                        .frame(maxWidth: 125, alignment: .leading)
+                        .frame(maxWidth: 115, alignment: .leading)
                 } else {
                     Circle()
                         .foregroundColor(Color(.darkGray))
@@ -176,7 +176,7 @@ struct Input: View {
                 GeometryReader(content: { geometry in
                     Row {
                         DigitButton(digit: .number(0))
-                            .frame(width: geometry.size.width / 2 - 5, height: geometry.size.height * 3/4 - 5)
+                            .frame(width: geometry.size.width / 2 - 5, height: geometry.size.height * 3/4)
                         DigitButton(digit: .point)
                         OperationButton(operation: .evaluate)
                     }
@@ -201,5 +201,11 @@ struct Calculator: View {
         }
         .ignoresSafeArea(.all, edges: .bottom)
         .background(.black)
+    }
+}
+
+struct Calculator_Preview: PreviewProvider {
+    static var previews: some View {
+        Calculator()
     }
 }
