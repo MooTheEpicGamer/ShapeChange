@@ -14,7 +14,7 @@ struct Display: View {
             Text("0")
                 .font(.system(size: 75, weight: .semibold))
                 .foregroundColor(.white)
-                .padding(17.5)
+                .padding(18.5)
         }
     }
 }
