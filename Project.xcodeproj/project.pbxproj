@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC23CEF12AB356CB00071D6C /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23CEF02AB356CB00071D6C /* Shapes.swift */; };
 		AC60799F2AAB756000AB677B /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC60799E2AAB756000AB677B /* Calculator.swift */; };
 		AC67EC5D2AAB6E3C004E0117 /* ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC67EC5C2AAB6E3C004E0117 /* ProjectApp.swift */; };
 		AC67EC612AAB6E3D004E0117 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC67EC602AAB6E3D004E0117 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC23CEF02AB356CB00071D6C /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		AC60799E2AAB756000AB677B /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		AC67EC592AAB6E3C004E0117 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC67EC5C2AAB6E3C004E0117 /* ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectApp.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				AC60799E2AAB756000AB677B /* Calculator.swift */,
 				AC67EC602AAB6E3D004E0117 /* Assets.xcassets */,
 				AC67EC622AAB6E3D004E0117 /* Preview Content */,
+				AC23CEF02AB356CB00071D6C /* Shapes.swift */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				AC67EC5D2AAB6E3C004E0117 /* ProjectApp.swift in Sources */,
 				AC60799F2AAB756000AB677B /* Calculator.swift in Sources */,
+				AC23CEF12AB356CB00071D6C /* Shapes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

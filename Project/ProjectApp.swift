@@ -7,11 +7,41 @@
 
 import SwiftUI
 
+enum Challenge: View {
+    case StackViewChallenge
+    case ShapeChallenge
+    
+    mutating func flip() {
+        switch self {
+        case .StackViewChallenge:
+            self = .ShapeChallenge
+        case .ShapeChallenge:
+            self = .StackViewChallenge
+        }
+    }
+    
+    var body: some View {
+        switch self {
+        case .StackViewChallenge:
+            Calculator()
+        case .ShapeChallenge:
+            Shapes()
+        }
+    }
+}
+
 @main
-struct ProjectApp: App {
+struct Project: App {
+    @State var challenge: Challenge = .ShapeChallenge
+    
     var body: some Scene {
         WindowGroup {
-            Calculator()
+            self.challenge
+            Button(action: {
+                self.challenge.flip()
+            }) {
+                Text("Switch")
+            }
         }
     }
 }

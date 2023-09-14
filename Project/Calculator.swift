@@ -176,7 +176,7 @@ struct Input: View {
                 GeometryReader(content: { geometry in
                     Row {
                         DigitButton(digit: .number(0))
-                            .frame(width: geometry.size.width / 2 - 5, height: geometry.size.height * 3/4)
+                            .frame(width: geometry.size.width / 2 - 5, height: geometry.size.height - 5)
                         DigitButton(digit: .point)
                         OperationButton(operation: .evaluate)
                     }
@@ -201,11 +201,5 @@ struct Calculator: View {
         }
         .ignoresSafeArea(.all, edges: .bottom)
         .background(.black)
-    }
-}
-
-struct Calculator_Preview: PreviewProvider {
-    static var previews: some View {
-        Calculator()
     }
 }
