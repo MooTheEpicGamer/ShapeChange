@@ -176,11 +176,11 @@ struct Input: View {
                 GeometryReader(content: { geometry in
                     Row {
                         DigitButton(digit: .number(0))
-                            .frame(width: geometry.size.width / 2 - 12.25, height: geometry.size.height - 5)
+                            .frame(width: geometry.size.width / 2 - 12.5, height: geometry.size.height - 5)
                         DigitButton(digit: .point)
                         OperationButton(operation: .evaluate)
                     }
-                    .padding(.leading, 10)
+                    .padding(.leading, 7.5)
                 })
             }
         })
